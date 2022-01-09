@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<link rel="stylesheet" type="text/css" href="StyleSheetPag1.css" />
+<link rel="stylesheet" type="text/css" href="Style.css" />
 
 <head runat="server">
     <title></title>

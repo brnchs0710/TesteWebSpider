@@ -1,0 +1,27 @@
+﻿.tituloPrincipal {
+    background-color: lightgray;
+    font-size: 25px;
+    margin-left: 140px;
+    text-align:center;
+}
+.nomesCss {
+    font-size: 15px;
+    text-align: center;
+    margin-left:5px;
+}
+
+.procurarArquivo {
+    margin-left: 5px;
+}
+
+.txtBox {
+    margin-left:5px;
+}
+
+.txtBox2 {
+
+}
+
+body {
+    style ="width: 530px"
+}

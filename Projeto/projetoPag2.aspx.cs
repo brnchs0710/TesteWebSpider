@@ -27,9 +27,29 @@ namespace Projeto
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnBaixar_Click(object sender, EventArgs e)
         {
+            string[] filePaths = Directory.GetFiles(Server.MapPath(@"upload\"), "*");
+            
+            string filename = rbListDocumentos.SelectedValue;
 
+            if (filename != "")
+            {
+                System.IO.FileInfo file = new System.IO.FileInfo(filename);
+                if (file.Exists)
+                {
+                    Response.Clear();
+                    Response.AddHeader("Content-Disposition", "attachment; filename=" + file.Name);
+                    Response.AddHeader("Content-Length", file.Length.ToString());
+                    Response.ContentType = "application/octet-stream";
+                    Response.WriteFile(file.FullName);
+                    Response.End();
+                }
+                else
+                {
+                    Response.Write("This file does not exist.");
+                }
+            }
         }
     }
 }

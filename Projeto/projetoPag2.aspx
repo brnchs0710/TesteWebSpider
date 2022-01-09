@@ -25,7 +25,7 @@
             </asp:RadioButtonList>
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnDownload" runat="server" Text="Download do Arquivo" Width="219px" CssClass="bttn" OnClick="Button1_Click" />
+            <asp:Button ID="btnDownload" runat="server" Text="Download do Arquivo" Width="219px" CssClass="bttn" OnClick="btnBaixar_Click" />
             <br />
         </div>
     </form>
